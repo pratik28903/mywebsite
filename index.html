@@ -1,218 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Pratik Ostwal</title>
+        <title>My resume cv</title>
     </head>
     <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Pratik Ostwal</a>
-                </div>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Pratik Ostwal cv</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home nav__icon'></i>Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#profile" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>Profile
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class='bx bx-book nav__icon'></i>Education
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-receipt nav__icon'></i>Skills
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class='bx bx-briefcase-alt nav__icon'></i>Experience
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#certificates" class="nav__link">
+                                <i class='bx bx-award nav__icon'></i>Certificates
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#references" class="nav__link">
+                                <i class='bx bx-link-external nav__icon'></i>References
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+                    <i class='bx bx-grid-alt'></i>
                 </div>
             </nav>
         </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Pratik Ostwal</span><br> <span class="txt-type" data-wait="3000" data-words='["Web_Developer","Web_Designer","Creator"]'></span></h1>
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!--========== HOME ==========-->
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <!--<img src="assets/img/perfil.jpg" alt="" class="home__img">-->
+                                <h1 lass="home__title">PRATIK<b>OSTWAL</b></h1>
+                                <h3 class="home__profession">Web Developer</h3>
 
-                    <a href="cv_web/index.html" class="button">See My CV</a>
-                </div>
+                                <!-- Button to generate and download the pdf. Available for desktop. -->
+                               <div>
+                                   <a downlode="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Downlode</a>
+                               </div>
+                            </div>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/pratik-ostwal-3293a81a9/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="https://github.com/pratik28903" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">    
-                    <img src="assets/img/banner-image.png" alt="">
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About Me</h2>
-<br>
-<br>
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about-us.png" alt="">
-                    </div>
+                            <div class="home__address bd-grid">
+                                <span class="home__information">
+                                    <i class='bx bx-map home__icon'></i>Katraj, Pune.
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bx-envelope home__icon'></i>pratikostwal985@email.com
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bx-phone home__icon'></i>8796889625
+                                </span>
+                            </div>
+                        </div>
+                     <!-- Theme change button -->
+                     <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>    
                     
-                    <div>
-                        <h2 class="about__subtitle">Hi Iam Pratik Ostwal</h2>
-                        <p class="about__text">I’m a pursuing BCA Degree from vishwakarma institute of technology Pune University.<br>I’ve  always been passionate about finding smart ways to save time and get excellent result.<br>I regard myself to be a very open minded person, ready for new challenge, especially when it comes to technology.<br>I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. </p>           
-                       <br>
-                       <br>
-                       <br>
-                       <br>
-                        <a href="assets/Documents/myResume.pdf" class="button">Downlode My CV</a>
+                     <!-- Button to generate and download the pdf. Available for desktop. -->
+                     <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                    </section>
+           
+           
+                    <!--========== SOCIAL ==========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">SOCIAL</h2>
 
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <!--p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>-->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
+                        <div class="social__container bd=grid">
+                            <a href="https://www.linkedin.com/in/pratik-ostwal-3293a81a9/" traget="_blank" class="social__link">
+                                <i class='bx bxl-linkedin-square socila__icon'></i> @pratik ostwal<br><br>
+                            </a>
+                            <a href="https://www.facebook.com/pratik.ostwal.7771" traget="_blank" class="social__link">
+                                <i class='bx bxl-facebook social__icon'></i> @pratik ostwal<br><br>
+                            </a>
+                            <a href="https://www.instagram.com/pratikostwal.25/" traget="_blank" class="social__link">
+                                <i class='bx bxl-instagram social__icon'></i> @pratik ostwal<br><br>
+                            </a>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">JAVA</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">45%</span>
-                            </div>
-                        </div>
-                    </div>
+                    </section>
                     
-                    <!--<div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>-->
+                    <!--========== PROFILE ==========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Profile</h2>
+
+                        <p class="profile__description">I’m a pursuing BCA Degree from vishwakarma institute of technology Pune University.
+                            I’ve always been passionate about finding smart ways to save time and get excellent result.
+                            I regard myself to be a very open minded person, ready for new challenge, especially when it comes to technology.
+                            I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best.</p>
+                    </section>
+                    <!--========== EDUCATION ==========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Bachelor of Computer Applications (BCA)</h3>
+                                    <span class="education__studies">vishwakarma institute of Information technology (VIIT), Pune University</span>
+                                    <span class="education__year">2018 - 2021</span>
+                                </div>
+                            </div>
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Higher Secondary School Certificate (HSC)</h3>
+                                    <span class="education__studies">Vishwakarma College of Arts Commerce and Science (VCACS)</span>
+                                    <span class="education__year">2017 - 2018</span>
+                                </div>
+                            </div>
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <!--<span class="education__line"></span>-->
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">econdary School Certificate (SSC)</h3>
+                                    <span class="education__studies">Sahyadri national school</span>
+                                    <span class="education__year">2016</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">skills</h2>
+
+                        <div class="skills__content bd-grid"></div>
+                        <ul class="skills__content bd-grid">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>HTML5
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Css3
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>JavaScript
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>UI/UX
+                            </li>
+                        </ul>
+
+                        <ul class="skills__content bd-grid">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Angular
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Java
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>React
+                            </li>
+                        </ul>
+                    </section>
+
                 </div>
-            </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+                <div class="resume__right">
+                    <!--========== EXPERIENCE ==========-->
+                    <!--<section class="experience section" id="experience">
+                        <h2 class="section-title">Experience</h2>
 
-                <!--<div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </div>
-                </div>-->
-            </section>
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                        <span class="experience__line"></span>
+                                </div>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">MASTER OF DESIGN</h3>
+                                    <span class="experience__company">From 2013 to 2015 | Tech Soft</span>
+                                    <p class="experience__description">Working in this company dedicating the best resposibility is the area that corresponds, deliversing the best results for the company and improving productivity.</p>
+                                </div>
+                            </div>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email id" class="contact__input">
-                        <textarea name="" id="" placeholder="Your Massage" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                        <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">MASTER OF DESIGN</h3>
+                                    <span class="experience__company">From 2013 to 2015 | Tech Soft</span>
+                                    <p class="experience__description">Working in this company dedicating the best resposibility is the area that corresponds, deliversing the best results for the company and improving productivity.</p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>-->
+                                        <!--<span class="experience__line"></span>-->
+                                <!--</div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">MASTER OF DESIGN</h3>
+                                    <span class="experience__company">From 2013 to 2015 | Tech Soft</span>
+                                    <p class="experience__description">Working in this company dedicating the best resposibility is the area that corresponds, deliversing the best results for the company and improving productivity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>-->
+
+                    <!--========== CERTIFICATES ==========-->
+                    <section class="certificate section" id="certificates">
+                        <h2 class="section-title">Certificates</h2>
+                    
+                        <div class="certificate__container bd-grid">
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">Java (2021)</h3>
+                                 <p class="certificate__description">For meting the expections of leading the team to work the specifind task in the labor field.</p>
+                            </div>
+
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">Web-designer (2020)</h3>
+                                 <p class="certificate__description">For meting the expections of leading the team to work the specifind task in the labor field.</p>
+                            </div>
+                        
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">Web-developer (2019)</h3>
+                                 <p class="certificate__description">For meting the expections of leading the team to work the specifind task in the labor field.</p>
+                            </div>
+                        
+                        </div>
+                    </section>
+
+                    <!--========== REFERENCES ==========-->
+                    <!--<section class="references section" id="references">
+                        <h2 class="section-title">Refreences</h2>
+
+                            <div class="references__container bd-grid">
+                               <div class="references__content bd-grid">
+                                   <span class="references__subtitle">Sr. Director</span>
+                                   <h3 class="references__title">Mr. Clay Doe</h3>
+                                   <ul class="references__contact">
+                                      <li>Phone: 999-777-666</li>
+                                      <li>Email: user@email.com</li>
+                                   </ul>
+                               </div>
+
+                               <div class="references__content bd-grid">
+                                   <span class="references__subtitle">Mag. Developer</span>
+                                   <h3 class="references__title">Mr. Robbinson Bass</h3>
+                                   <ul class="references__contact">
+                                      <li>Phone: 999-777-666</li>
+                                      <li>Email: user@email.com</li>
+                                  </ul>
+                              </div>
+                           </div>
+                    </section>-->
+
+                    <!--========== LANGUAGES ==========-->
+                    <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>English
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Hindi
+                            </li>
+                        
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Marathi
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Marwadi
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    </section>
+                    <!--========== INTERESTS ==========-->
+                    <section class="interests section">
+                        <h2 class="section-title">Interests</h2>
+
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <i class='bx bx-headphone interests__icon'></i>
+                                <span class="interests__name">Music</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bxs-plane-alt interests__icon'></i>
+                                <span class="interests__name">Travel</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bx-box interests__icon'></i>
+                                <span class="interests__name">Read</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <i class='bx bx-dumbbell interests__icon'></i>
+                                <span class="interests__name">Fitness</span>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </section>
+            </div>        
         </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Social</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/pratik.ostwal.7771" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/pratikostwal.25/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p class="para">
-                Copyright ©2021 All rights reserved | This template is made by
-                <a href="#"><span style="color: var(--primary-color);">Pratik Ostwal</span></a>
-            </p>        </footer>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+        </a>
 
+        <!--========== HTML2PDF ==========-->
+        <script src="assets/js/html2pdf.bundle.min.js"></script>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
+        <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
     </body>
 </html>
