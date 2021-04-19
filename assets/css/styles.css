@@ -292,13 +292,22 @@ img{
   width: 95%;
 }
 .skills__css{
+  width: 85%;
+}
+.skills__boot{
   width: 70%;
 }
-.skills__js{
-  width: 65%;
+.skills__jas{
+  width: 60%;
+}
+.skills__cjav{
+  width:55%;
 }
 .skills__ux{
-  width: 85%;
+ width:45%;
+}
+.skills__ph{
+  width:30%
 }
 .skills__img{
   border-radius: .5rem;
@@ -386,7 +395,6 @@ img{
   visibility:visible;
   bottom:5rem;
 }
-
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
